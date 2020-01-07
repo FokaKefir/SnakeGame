@@ -1,0 +1,17 @@
+WHITE = (255, 255, 255)
+GRAY = (100, 100, 100)
+BLACK = (0, 0, 0)
+
+DELAY = 750
+FPS = 60
+
+WIDTH = 500
+ROWS = 10
+
+UP = -1
+RIGHT = -2
+DOWN = -3
+LEFT = -4
+STOP = -5
+
+BODY = 1

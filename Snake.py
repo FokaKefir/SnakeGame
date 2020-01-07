@@ -36,17 +36,17 @@ class Snake(object):
     def replacingToTheNewAction(self):
         if(self.newAction == CONST.UP and self.action != CONST.DOWN):
             self.matrix[self.head.getX()][self.head.getY()] = CONST.UP
-
+            self.action = self.newAction
         elif (self.newAction == CONST.DOWN and self.action != CONST.UP):
             self.matrix[self.head.getX()][self.head.getY()] = CONST.DOWN
-
+            self.action = self.newAction
         elif (self.newAction == CONST.RIGHT and self.action != CONST.LEFT):
             self.matrix[self.head.getX()][self.head.getY()] = CONST.RIGHT
-
+            self.action = self.newAction
         elif (self.newAction == CONST.LEFT and self.action != CONST.RIGHT):
             self.matrix[self.head.getX()][self.head.getY()] = CONST.LEFT
-
-        self.action = self.newAction
+            self.action = self.newAction
+        
 
     def gettingNewHead(self):
         self.newHead = Position.Position(self.head.getX(), self.head.getY())

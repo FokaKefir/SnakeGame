@@ -49,6 +49,8 @@ class Window():
                 value = snake.getSnakeFromPosition(pos)
                 if(value != 0):
                     self.drawCube(CONST.GRAY, pos)
+        applePosition = snake.getApple()
+        self.drawCube(CONST.RED, applePosition)
 
     def getKey(self):
         events = pygame.event.get()

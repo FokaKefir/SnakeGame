@@ -15,6 +15,7 @@ def main():
     window = Window.Window(CONST.WIDTH, CONST.ROWS)
     snake = Snake.Snake(tempPos, CONST.ROWS)
     snake.creatMatrix()
+    snake.generateApple()
 
     gameIsOn = True
 

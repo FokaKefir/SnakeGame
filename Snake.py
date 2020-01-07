@@ -46,7 +46,17 @@ class Snake(object):
         elif (self.action == CONST.LEFT):
             self.newHead.setX(self.head.getX() - 1)
 
+    def generateApple(self):
+        self.apple = Position.Position(0, 0)
+        self.apple.generateRandomPosition()
+        while(self.matrix[self.apple.getX()][self.apple.getY()] != 0):
+            self.apple.generateRandomPosition()
+
+        self.matrix[self.apple.getX()][self.apple.getY()] = CONST.APPLE
+
     def move(self):
+        eatingApple = False
+
         if(self.action != self.newAction or self.action == CONST.STOP):
             self.replacingToTheNewAction()
 
@@ -55,11 +65,18 @@ class Snake(object):
         if(self.newHead.getX()< 0 or self.newHead.getY() < 0 or self.newHead.getX() >= self.rows or self.newHead.getY() >= self.rows):
             self.winning = False
 
+
+
         else:
+            if(self.newHead.getX() == self.apple.getX() and self.newHead.getY() == self.apple.getY()):
+                eatingApple = True
+                self.generateApple()
+
             self.head = self.newHead
             self.matrix[self.head.getX()][self.head.getY()] = self.action
 
-            self.moveTail()
+            if(eatingApple == False):
+                self.moveTail()
 
     def gettingNewTail(self):
         self.newTail = Position.Position(self.tail.getX(), self.tail.getY())
@@ -82,8 +99,6 @@ class Snake(object):
         self.matrix[self.tail.getX()][self.tail.getY()] = 0
         self.tail = self.newTail
 
-
-
     def setNewAction(self, newAction):
         self.newAction = newAction
     def getAction(self):
@@ -98,7 +113,6 @@ class Snake(object):
         return self.head
     def getTail(self):
         return self.tail
-
-
-
+    def getApple(self):
+        return self.apple
 

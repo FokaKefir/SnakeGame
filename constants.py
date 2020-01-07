@@ -1,6 +1,7 @@
 WHITE = (255, 255, 255)
 GRAY = (100, 100, 100)
 BLACK = (0, 0, 0)
+RED = (255, 0, 0)
 
 DELAY = 750
 FPS = 60
@@ -15,3 +16,4 @@ LEFT = -4
 STOP = -5
 
 BODY = 1
+APPLE = 2

@@ -23,7 +23,7 @@ def main():
 
 
         pressedKey = window.getKey()
-        if(pressedKey == chr(pygame.K_ESCAPE) or snake.getWinning() == False):
+        if(pressedKey == chr(pygame.K_ESCAPE)):
             gameIsOn = False
 
         if(pressedKey == 'a'):
@@ -38,15 +38,14 @@ def main():
         if (snake.getNewAction() != CONST.STOP):
             snake.move()
 
-        window.setClock(CONST.FPS)
-        window.redrawWindow()
+        if(snake.getWinning() == False):
+            gameIsOn = False
 
-        window.drawSnake(snake)
-        print(snake.getHead().getX(), snake.getHead().getY())
-        print(snake.getTail().getX(), snake.getTail().getY(), end="\n\n")
-
-
-        window.delay(CONST.DELAY)
+        if(gameIsOn == True):
+            window.setClock(CONST.FPS)
+            window.redrawWindow()
+            window.drawSnake(snake)
+            window.delay(CONST.DELAY)
 
 
 

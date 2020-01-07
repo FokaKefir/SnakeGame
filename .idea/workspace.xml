@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ad01f59-b411-4a2d-8d6f-4996d6edcfb7" name="Default Changelist" comment="">
+    <list default="true" id="1ad01f59-b411-4a2d-8d6f-4996d6edcfb7" name="Default Changelist" comment="The game will over if the snake will collide with himself">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Position.py" beforeDir="false" afterPath="$PROJECT_DIR$/Position.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Snake.py" beforeDir="false" afterPath="$PROJECT_DIR$/Snake.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Window.py" beforeDir="false" afterPath="$PROJECT_DIR$/Window.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +88,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578394218555</updated>
-      <workItem from="1578394224197" duration="21582000" />
+      <workItem from="1578394224197" duration="22368000" />
     </task>
     <task id="LOCAL-00001" summary="Adding the apple to the game mode">
       <created>1578415940319</created>
@@ -95,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578415940319</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="The game will over if the snake will collide with himself">
+      <created>1578416386062</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578416386062</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,17 +112,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding the apple to the game mode" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding the apple to the game mode" />
+    <MESSAGE value="The game will over if the snake will collide with himself" />
+    <option name="LAST_COMMIT_MESSAGE" value="The game will over if the snake will collide with himself" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578394295199">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578394295199" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1578415939671">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1578416390400">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578415939671" />
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578416390400" />
     <state width="606" height="466" key="DebuggerActiveHint" timestamp="1578408595201">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -154,10 +164,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578414613013" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1578415947559">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1578416395056">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578415947559" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578416395056" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

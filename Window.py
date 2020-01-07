@@ -4,18 +4,25 @@ import Position
 
 class Window():
 
+
+    #region 1. Init Object
     def __init__(self, width, rows):
         self.width = width
         self.rows = rows
         self.win = pygame.display.set_mode((width, width))
         self.clock = pygame.time.Clock()
 
+    # endregion
+
+    # region 2. Time functions
     def delay(self, milliseconds):
         pygame.time.delay(milliseconds)
 
     def setClock(self, fps):
         self.clock.tick(fps)
+    # endregion
 
+    # region 3. Draw functions
     def drawGrid(self):
         size = self.width // self.rows
 
@@ -52,8 +59,13 @@ class Window():
         applePosition = snake.getApple()
         self.drawCube(CONST.RED, applePosition)
 
+    # endregion
+
+    # region 4. Getters and Setters
     def getKey(self):
         events = pygame.event.get()
         for event in events:
             if(event.type == pygame.KEYDOWN):
                 return chr(event.key)
+
+    # endregion

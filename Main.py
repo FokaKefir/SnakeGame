@@ -1,5 +1,4 @@
 import pygame
-
 import Position
 import constants as CONST
 import Window
@@ -46,7 +45,6 @@ def main():
             window.redrawWindow()
             window.drawSnake(snake)
             window.delay(CONST.DELAY)
-
 
 
 main()

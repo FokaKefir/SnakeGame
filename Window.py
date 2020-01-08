@@ -58,6 +58,8 @@ class Window():
                     self.drawCube(CONST.GRAY, pos)
         applePosition = snake.getApple()
         self.drawCube(CONST.RED, applePosition)
+        headPosition = snake.getHead()
+        self.drawCube(CONST.GRAY_HEAD, headPosition)
 
     # endregion
 

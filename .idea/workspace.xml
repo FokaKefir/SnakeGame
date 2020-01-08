@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ad01f59-b411-4a2d-8d6f-4996d6edcfb7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Snake.py" beforeDir="false" afterPath="$PROJECT_DIR$/Snake.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Window.py" beforeDir="false" afterPath="$PROJECT_DIR$/Window.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1578394218555</updated>
       <workItem from="1578394224197" duration="22639000" />
-      <workItem from="1578478494504" duration="1008000" />
+      <workItem from="1578478494504" duration="1263000" />
     </task>
     <task id="LOCAL-00001" summary="Adding the apple to the game mode">
       <created>1578415940319</created>
@@ -117,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578478920297</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Changes with the apple generation">
+      <created>1578479635503</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1578479635503</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,17 +134,18 @@
     <MESSAGE value="The game will over if the snake will collide with himself" />
     <MESSAGE value="Sorting and splitting to regions the Objects" />
     <MESSAGE value="Adding for the snake random initial position" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding for the snake random initial position" />
+    <MESSAGE value="Changes with the apple generation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes with the apple generation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578394295199">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578394295199" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1578478919703">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1578479634956">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578478919703" />
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578479634956" />
     <state width="606" height="466" key="DebuggerActiveHint" timestamp="1578408595201">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -147,22 +154,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578394290783" />
-    <state width="1877" height="215" key="GridCell.Tab.0.bottom" timestamp="1578479536089">
+    <state width="1877" height="215" key="GridCell.Tab.0.bottom" timestamp="1578479758228">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="215" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578479536089" />
-    <state width="1877" height="215" key="GridCell.Tab.0.center" timestamp="1578479536089">
+    <state width="1877" height="215" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578479758228" />
+    <state width="1877" height="215" key="GridCell.Tab.0.center" timestamp="1578479758228">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="215" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578479536089" />
-    <state width="1877" height="215" key="GridCell.Tab.0.left" timestamp="1578479536089">
+    <state width="1877" height="215" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578479758228" />
+    <state width="1877" height="215" key="GridCell.Tab.0.left" timestamp="1578479758228">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="215" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578479536089" />
-    <state width="1877" height="215" key="GridCell.Tab.0.right" timestamp="1578479536089">
+    <state width="1877" height="215" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578479758228" />
+    <state width="1877" height="215" key="GridCell.Tab.0.right" timestamp="1578479758228">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="215" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578479536089" />
+    <state width="1877" height="215" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578479758228" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1578478639070">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -179,10 +186,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578478639070" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1578478927536">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1578479641281">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578478927536" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578479641281" />
     <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1578478494698">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -193,6 +200,6 @@
     <state x="678" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578478504528" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Snake$Main.coverage" NAME="Main Coverage Results" MODIFIED="1578479536084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Snake$Main.coverage" NAME="Main Coverage Results" MODIFIED="1578479758222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

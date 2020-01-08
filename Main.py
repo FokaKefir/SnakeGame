@@ -7,12 +7,9 @@ import Snake
 
 def main():
 
-    randomPos = Position.Position(0, 0)
-    randomPos.generateRandomPosition()
-    tempPos = Position.Position(0, 0)
-
     window = Window.Window(CONST.WIDTH, CONST.ROWS)
-    snake = Snake.Snake(tempPos, CONST.ROWS)
+    head = Position.Position(0, 0).generateRandomPosition()
+    snake = Snake.Snake(head=head, rows=CONST.ROWS)
     snake.creatMatrix()
     snake.generateApple()
 

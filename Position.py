@@ -19,6 +19,7 @@ class Position(object):
         randomY = randint(0, CONST.ROWS-1)
         self.x = randomX
         self.y = randomY
+        return Position(randomX, randomY)
 
     # endregion
 

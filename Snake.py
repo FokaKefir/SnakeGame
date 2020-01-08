@@ -23,9 +23,10 @@ class Snake(object):
         self.matrix[self.head.getX()][self.head.getY()] = CONST.BODY
 
     def generateApple(self):
-        self.apple = Position.Position(0, 0)
-        self.apple.generateRandomPosition()
-        while(self.matrix[self.apple.getX()][self.apple.getY()] != 0):
+        self.apple = Position.Position(0, 0).generateRandomPosition()
+
+    def addingNewApple(self):
+        while (self.matrix[self.apple.getX()][self.apple.getY()] != 0):
             self.apple.generateRandomPosition()
 
         self.matrix[self.apple.getX()][self.apple.getY()] = CONST.APPLE
@@ -93,7 +94,7 @@ class Snake(object):
         if(self.winning == True):
             if(self.newHead.getX() == self.apple.getX() and self.newHead.getY() == self.apple.getY()):
                 eatingApple = True
-                self.generateApple()
+                self.addingNewApple()
 
             self.head = self.newHead
             self.matrix[self.head.getX()][self.head.getY()] = self.action

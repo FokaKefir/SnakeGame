@@ -12,6 +12,7 @@ def main():
     snake = Snake.Snake(head=head, rows=CONST.ROWS)
     snake.creatMatrix()
     snake.generateApple()
+    snake.addingNewApple()
 
     gameIsOn = True
 

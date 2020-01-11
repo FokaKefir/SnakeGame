@@ -4,7 +4,7 @@ GRAY_HEAD = (200, 200, 200)
 BLACK = (0, 0, 0)
 RED = (255, 0, 0)
 
-DELAY = 750
+DELAY = 350
 FPS = 60
 
 WIDTH = 500

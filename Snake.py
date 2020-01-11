@@ -87,9 +87,10 @@ class Snake(object):
         if(self.newHead.getX()< 0 or self.newHead.getY() < 0 or self.newHead.getX() >= self.rows or self.newHead.getY() >= self.rows):
             self.winning = False
 
-        newPositionValue = self.matrix[self.newHead.getX()][self.newHead.getY()]
-        if(newPositionValue != 0 and newPositionValue != CONST.APPLE):
-            self.winning = False
+        else:
+            newPositionValue = self.matrix[self.newHead.getX()][self.newHead.getY()]
+            if(newPositionValue != 0 and newPositionValue != CONST.APPLE):
+                self.winning = False
 
         if(self.winning == True):
             if(self.newHead.getX() == self.apple.getX() and self.newHead.getY() == self.apple.getY()):
